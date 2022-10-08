@@ -1,20 +1,67 @@
 header{
     text-align: center;
     background-color: black;
-    height: 15mm;
+    height: 18mm;
+    max-width: 1000px;
+    min-width: 900px;
+    margin: 0px auto;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 .headnav {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 32pt;
-    color: white;
+    font-size: 24pt;
+    color: gray;
     margin: 0px 10px 0px 10px;
     background-color: black;
+}
+.headnav:hover {
+    color:white;
+}
+
+nav {
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    max-width: 1000px;
+    min-width: 900px;
+}
+
+.active {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32pt;
+    color: white;
+    margin: 10px;
+    background-color: black;
+}
+
+.skipdiv {
+    width: 100%;
+    background-color: red;
+    text-align: center;
+    height: 32px;
+    padding-top: 5px;
+    max-width: 1000px;
+    min-width: 900px;
+    margin: 0px auto;
+}
+
+.skip{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14pt;
+    color: black;
+    background-color: red;
+    text-align: center;
+}
+.skip:hover {
+    color: white;
 }
 
 h1 {
     font-size: 24pt;
-    margin: 10px;
+    margin: 0px 0px 10px 0px;
     text-align: center;
     color: white;
 }
@@ -22,38 +69,129 @@ h1 {
 body {
     background-color: rgba(6, 0, 12, 0.85);
 }
+
 main {
-    margin: 10px 0px 10px 0px;
+    margin: 0px auto;
     background-color: rgb(6, 0, 12);
+    max-width: 1000px;
+    min-width: 900px;
 }
 
 p {
     font-size: 16pt;
-    margin: 20px auto;
     text-align: center;
+    margin: 0px auto;
     color: white;
     width: 700px;
+}
+
+figure {
+    margin-top: 10px;
 }
 
 figcaption{
     font-size: 16pt;
     font-family:'Times New Roman', Times, serif;
     color:white;
-}
-  
-figure {
-    margin: 20px 0px 10px 0px;
     text-align: center;
 }
-
-.float-container{
-    border: 3px solid #fff;
-    padding: 20px;
+  
+.inlineimg {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: solid 2px white;
 }
 
-.float-child{
-    width: 50%;
-    float: left;
-    padding: 20px;
-    border: 2px solid red;
+.inlineimg:hover {
+    border: solid 2px lightcoral;
 }
+
+.inclineimg:hover {
+    border: solid 2px lightcoral;
+}
+
+.indeximg {
+    width: 30%;
+    padding-left: 35%;
+    padding-right: 35%;
+    margin: 0px auto;
+    border: solid 2px white;
+}
+
+.indeximg:hover {
+    border: solid 2px lightcoral;
+}
+
+.photo{
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    border: solid 2px white;
+}
+
+.photo:hover {
+    border: solid 2px lightcoral;
+}
+
+.movieimg {
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    border: solid 2px white;
+}
+
+.movieimg:hover {
+    border: solid 2px lightcoral;
+}
+
+.gameimg {
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    border: solid 2px white;
+}
+
+.gameimg:hover {
+    border: solid 2px lightcoral;
+}
+
+/* .photogrid {
+    max-height: 990px;
+    max-width: 970px;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.photobox {
+    color: black;
+    background-color: antiquewhite;
+    border: 3px brown solid;
+    border-radius: 5px;
+}
+
+.gridimg {
+    height: 100%;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    object-fit: cover;
+} */
