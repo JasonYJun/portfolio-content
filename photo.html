@@ -12,6 +12,7 @@
         <title> Photo Gallery</title>
         <link rel="stylesheet" href="css/html5reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/98d2fb9ff8.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -19,7 +20,7 @@
             <nav>
                 <ul>
                     <li><a class="headnav" href="index.html">Home</a></li>
-                    <li><a class="active" class="headnav" href="photo.html">Photo Gallery</a></li>
+                    <li><i class="fa-sharp fa-solid fa-camera fa-xl"></i><a class="active" class="headnav" href="photo.html">Photo Gallery</a></li>
                     <li><a class="headnav" href="movie.html">Movie Collection</a></li>
                     <li><a class="headnav" href="game.html">Gaming Library</a></li>
                 </ul>
@@ -29,81 +30,40 @@
             <a class="skip" href="#main">Jump to content</a>
         </div>
 
-        <main>
-            <p>&nbsp;</p>
-            <h1 id="main"> The Wedding</h1>
-            <p>
+        <main> 
+            <!-- <p>&nbsp;</p> -->
+            <!-- <h1> The Wedding</h1> -->
+            <!-- <p>
                 This is a photo of a couple having their wedding photo taken on the street.
-            </p>
-            <figure>
-                <img class="photo" src="image/The Wedding.jpg" alt="Photo of a street wedding" width=500></img>
-                <figcaption>The Wedding</figcaption>
-            </figure>
-            
-            <p>&nbsp;</p>
+            </p> -->
+            <ul id="photoContainer">
+                <li id="galleryli">
+                    <img class="flexphoto" src="image/The Wedding.jpg" alt="Photo of a street wedding"></img>
+                </li>
+                <li id="galleryli"> 
+                    <img class="flexphoto" src="image/Jazz Night.jpg" alt="Photo of a jazz band"></img>
+                </li>
+                <li id="galleryli">
+                    <img class="flexphoto" src="image/Jazz & Wine.jpg" alt="Photo of a jazz bar"></img>
+                </li>
+                <li id="galleryli">
+                    <img class="flexphoto" src="image/School Day.jpg" alt="Photo of a Student"></img>
+                </li>
+                <li id="galleryli">
+                    <img class="flexphoto" src="image/Happy Winter.jpg" alt="Photo of a girl smiling"></img>
+                </li>
+                <li id="galleryli">
+                    <img class="flexphoto" src="image/Shadowy Light.jpg" alt="Photo of two kids"></img>
+                </li>
+                <li id="galleryli">
+                    <img class="flexphoto" src="image/Spring Outing.jpg" alt="Photo of a mother and her child"></img>
+                </li>
+                <li id="galleryli">
+                    <img class="flexphoto" src="image/Christmas.jpg" alt="Photo of a family in christmas"></img>
+                </li>
+                <li></li>
+            </ul>
 
-            <h1> Jazz Night</h1>
-            <p>
-                The following two are photos taken in a jazz bar in Shanghai. That was a memorable night.
-            </p>
-            
-            <img class="inlineimg" src="image/Jazz Night.jpg" alt="Photo of a jazz band"></img>
-            <img class="inlineimg" src="image/Jazz & Wine.jpg" alt="Photo of a jazz bar"></img>
-            
-            <p>&nbsp;</p>
-
-            <h1>Friends</h1>
-            <p>
-                The following two are photos of two of my friends in college.
-            </p>
-            <figure>
-                <img class="photo" src="image/School Day.jpg" alt="Photo of a Student" width="500"></img>
-                <figcaption>School Day</figcaption>
-            </figure>
-            <figure>
-                <img class="photo" src="image/Happy Winter.jpg" alt="Photo of a girl smiling" width="500"></img>
-                <figcaption>Happy Winter</figcaption>
-            </figure>
-            <p>&nbsp;</p>
-
-            <h1>Kids and Light</h1>
-            <p>
-                This photo was taken in an art musium where two kids got excited and stared at the comination of lights for a long time.
-            </p>
-            <figure>
-                <img class="photo" src="image/Shadowy Light.jpg" alt="Photo of two kids" width="500"></img>
-                <figcaption>Shadowy Light</figcaption>
-            </figure>
-            <p>&nbsp;</p>
-
-            <h1>Family Outing</h1>
-            <p>The following two are photos about family. The first one was taken in Beijing, while the second one in Shanghai.</p>
-            <figure>
-                <img class="photo" src="image/Spring Outing.jpg" alt="Photo of a mother and her child" width="500"></img>
-                <figcaption>Spring Outing</figcaption>
-            </figure>
-            
-            <figure>
-                <img class="photo" src="image/Christmas.jpg" alt="Photo of a family in christmas" width="500"></img>
-                <figcaption>Christmas</figcaption>
-            </figure>
-
-
-
-            <!-- <div class="photogrid">
-                <div class="photobox">
-                    <img class="gridimg" src="image/p4.jpg" alt="Photo of A Slick Truck"></img>
-                </div>
-                <div class="photobox">
-                    <img class="gridimg" src="image/p5-2.jpg" alt="Photo of A Slick Truck"></img>
-                </div>
-                <div class="photobox">
-                    <img class="gridimg" src="image/p7.jpg" alt="Photo of A Slick Truck"></img>
-                </div>
-                <div class="photobox">
-                    <img class="gridimg" src="image/p11-1.jpg" alt="Photo of A Slick Truck"></img>
-                </div>
-            </div> -->
         </main>
 
 
