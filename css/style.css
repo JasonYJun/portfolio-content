@@ -2,12 +2,11 @@ header{
     text-align: center;
     background-color: black;
     height: 18mm;
-    max-width: 1000px;
-    min-width: 900px;
+    width: 100%;
     margin: 0px auto;
 }
 
-nav ul li {
+nav > ul li{
     display: inline-block;
 }
 
@@ -23,10 +22,9 @@ nav ul li {
 }
 
 nav {
-    margin: 0px 0px 10px 0px;
+    margin: 0px auto;
     text-align: center;
-    max-width: 1000px;
-    min-width: 900px;
+    width:100%
 }
 
 .active {
@@ -43,8 +41,7 @@ nav {
     text-align: center;
     height: 32px;
     padding-top: 5px;
-    max-width: 1000px;
-    min-width: 900px;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -73,8 +70,7 @@ body {
 main {
     margin: 0px auto;
     background-color: rgb(6, 0, 12);
-    max-width: 1000px;
-    min-width: 900px;
+    width:100%;
 }
 
 p {
@@ -96,7 +92,7 @@ figcaption{
     text-align: center;
 }
   
-.inlineimg {
+/* .inlineimg {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -106,13 +102,9 @@ figcaption{
     border: solid 2px white;
 }
 
-.inlineimg:hover {
-    border: solid 2px lightcoral;
-}
-
 .inclineimg:hover {
     border: solid 2px lightcoral;
-}
+} */
 
 .indeximg {
     width: 30%;
@@ -126,18 +118,13 @@ figcaption{
     border: solid 2px lightcoral;
 }
 
-.photo{
+/* .photo{
     width:60%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20%;
     padding-right: 20%;
-    border: solid 2px white;
-}
-
-.photo:hover {
-    border: solid 2px lightcoral;
-}
+} */
 
 .movieimg {
     width:60%;
@@ -163,6 +150,115 @@ figcaption{
 
 .gameimg:hover {
     border: solid 2px lightcoral;
+}
+
+#tenetHeader, #tenetContent {
+    background: url("../image/secrets-of-tenet.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cmiycHeader, #cmiycContent{
+    background: url("../image/Catch-Me.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tenetHeader, #cmiycHeader {
+    font-family: "Trirong", serif;
+    margin-bottom: 0px;
+    width:100%;
+    font-size: 32pt;
+    padding-top: 30px;
+}
+#tenetContent, #cmiycContent {
+    width: 100%;
+    height: 250px;
+    padding: 50px 0px;
+    font-size: 24pt;
+}
+
+i {
+    color:antiquewhite;
+}
+
+#deathstrandingimg {
+    transition-duration: 2s;
+}
+
+#deathstrandingimg:hover {
+    transform: scale(1.5);
+    border:none;
+
+}
+
+/* Does every page except gallery need to be grid? */
+body {
+    display: grid;
+}
+
+#photoContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#photoContainer:last-child {
+    flex-grow: 10;
+  }
+
+#galleryli {
+    height: 350px;
+    flex-grow: 1;
+}
+
+.flexphoto {
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+
+/* This is the monile view */
+@media screen and (max-width: 950px){
+    #galleryli {
+        height: 170px;
+        flex-grow: 1;
+    }
+
+    .flexphoto {
+        height: 150px;
+        max-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+      }
+
+    nav > ul li{
+        display: block;
+    }
+
+    header {
+        height: auto;
+        margin: 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headnav {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 16pt;
+        color: gray;
+        margin: 0px 10px 0px 10px;
+        background-color: black;
+    }
+
+    .active {
+        font-size: 20pt;
+    }
 }
 
 /* .photogrid {
