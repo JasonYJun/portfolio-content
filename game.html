@@ -15,8 +15,8 @@
         <script src="https://kit.fontawesome.com/98d2fb9ff8.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
-        <header>
+    <body id="gamecontainer">
+        <header id="gameheader">
             <nav>
                 <ul>
                     <li><a class="headnav" href="index.html">Home</a></li>
@@ -26,13 +26,14 @@
                 </ul>
             </nav>
         </header>
-        <div class="skipdiv">
+
+        <div class="skipdiv" id="gameskip">
             <a class="skip" href="#main">Jump to content</a>
         </div>
         
-        <main>
+        <main id="gamemain">
             <p>&nbsp;</p>
-            <h1 id="main">Death Stranding</h1> 
+            <h1>Death Stranding</h1> 
             <p>
                 From legendary game creator Hideo Kojima comes an all-new, genre-defying experience. Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the disconnected remnants of our future in his hands, he embarks on a journey to reconnect the shattered world one step at a time.
             </p>
@@ -51,11 +52,11 @@
                 THE NEW FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.
             </p>
             <figure>
-                <img class="gameimg" src="image/EldenRing1.jpg" alt="Screen shot of DeathStranding" width="800"></img>
+                <img id="eldenringimg" class="gameimg" src="image/EldenRing1.jpg" alt="Screen shot of DeathStranding" width="800"></img>
                 <figcaption>EldenRing 1</figcaption>
             </figure>
             <figure>
-                <img class="gameimg" src="image/EldenRing2.jpg" alt="Screen shot of DeathStranding" width="800"></img>
+                <img id="eldenringimg" class="gameimg" src="image/EldenRing2.jpg" alt="Screen shot of DeathStranding" width="800"></img>
                 <figcaption>EldenRing 2</figcaption>
             </figure>
             <p>&nbsp;</p>
@@ -65,21 +66,28 @@
                 Dynamic seasons change everything at the world’s greatest automotive festival. Go it alone or team up with others to explore beautiful and historic Britain in a shared open world. Collect, modify and drive over 450 cars. Race, stunt, create and explore – choose your own path to become a Horizon Superstar.
             </p>
             <figure>
-                <img class="gameimg" src="image/Forza41.jpg" alt="Screen shot of DeathStranding" width="800"></img>
+                <img id="forzaimg" class="gameimg" src="image/Forza41.jpg" alt="Screen shot of DeathStranding" width="800"></img>
                 <figcaption>Forza4 1</figcaption>
             </figure>
             <figure>
-                <img class="gameimg" src="image/Forza42.jpg" alt="Screen shot of DeathStranding" width="800"></img>
+                <img id="forzaimg" class="gameimg" src="image/Forza42.jpg" alt="Screen shot of DeathStranding" width="800"></img>
                 <figcaption>Forza4 2</figcaption>
             </figure>
             <figure>
-                <img class="gameimg" src="image/Forza43.jpg" alt="Screen shot of DeathStranding" width="800"></img>
+                <img id="forzaimg" class="gameimg" src="image/Forza43.jpg" alt="Screen shot of DeathStranding" width="800"></img>
                 <figcaption>Forza4 3</figcaption>
             </figure>
         </main>
 
+        <aside id="gameaside">
+            <p>&nbsp</p>
+            <h1>EldenRing Game Review</h2>
+            <p id="sidegamereview">In the 87 hours that it took me to beat Elden Ring, I was put through an absolute wringer of emotion: Anger as I was beaten down by its toughest challenges, exhilaration when I finally overcame them, and a fair amount of sorrow for the mountains of exp I lost along the way to some of the toughest boss encounters FromSoftware has ever conceived. But more than anything else I was in near-constant awe – from the many absolutely jaw-dropping vistas, the sheer scope of an absolutely enormous world, the frequently harrowing enemies, and the way in which Elden Ring nearly always rewarded my curiosity with either an interesting encounter, a valuable reward, or something even greater. FromSoftware takes the ball that The Legend of Zelda: Breath of the Wild got rolling and runs with it, creating a fascinating and dense open world about freedom and exploration above all else, while also somehow managing to seamlessly weave a full-on Dark Souls game into the middle of it. It shouldn’t be a surprise to anyone that Elden Ring ended up as one of the most unforgettable gaming experiences I’ve ever had.</p>
+            <p>&nbsp</p>
+            <p id="sidegamereview">To set the stage, all you know from the outset is that you play as a “Tarnished” of no renown, blessed by grace, and are compelled to make the journey to The Lands Between and become an Elden Lord. What that actually means, how one might go about doing that, and what the deal is with that giant glowing golden tree are all things that you have to discover yourself. Like other FromSoft games, the grand story is hard to fully digest on a first playthrough, especially because there’s no in-game journal to refresh you on the events, characters, or unique terms you encounter across dozens of hours. There really should be, but it is a story I nonetheless enjoyed trying to piece together for myself. I look forward to supplementing that knowledge with the inevitable painstakingly detailed lore videos that emerge from the community later.</p>
+        </aside>
 
-        <footer>
+        <footer id="gamefooter">
             <p>This is a footer.</p>
         </footer>
     </body>
