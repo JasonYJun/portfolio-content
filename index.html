@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="icon" type="image/x-icon" href="image/256x256LOGO.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-445RB9KQ6G"></script>
         <script>
@@ -16,6 +17,9 @@
     </head>
 
     <body class="indexcontainer">
+        <div class="skipdiv">
+            <a class="skip" href="#main">Jump to content</a>
+        </div>
         <header>
             <nav>
                 <ul>
@@ -26,17 +30,15 @@
                 </ul>
             </nav>
         </header>
-        <div class="skipdiv">
-            <a class="skip" href="#main">Jump to content</a>
-        </div>
+        
 
-        <main>
+        <main id="anim_bg">
             <h1 id="main">About Me</h1>
             <p>
                 My name is Jason, a photographer, filmmaker, YouTube creator and entrepreneur based in Ann Arbor. I use my platforms to inspire and help people pursue their passions behind the lens. In 2019 I was named Breakout YouTuber of the Year at the Shorty Awards and in 2020 received a Streamy for Cinematographer of the Year. My work can be found in a number of outlets but a notable personal achievement for me was having my work featured on two special collection coins issued by the Royal Canadian Mint.
             </p>
             <figure>
-                <img class="indeximg" src="image/p11.jpg" alt="My selfy"></img>
+                <img class="indeximg" src="image/p11.jpg" alt="My selfy">
             </figure>
             <p>
                 Photography is a hobby that you can make improvements quickly and see your progress easily. If you line up your photos next to each other from month to month, you will see those changes. In one year, those differences will be significant. Not only will you see how much better you are, seeing some of your favorites each month will give you that extra bit of motivation to keep clicking away.
@@ -49,12 +51,13 @@
             <p>&nbsp;</p>
         </main>
 
-        <form action="https://formspree.io/f/xjvzpjaz" method="POST">
-            <label>
+        <form action="https://formspree.io/f/xjvzpjaz" method="POST" id="form_index">
+            <label id="form_lable">
             Your email:
             <input type="email" name="email">
             </label>
-            <label>
+
+            <label id="form_lable">
             Your message:
             <textarea name="message"></textarea>
             </label>
