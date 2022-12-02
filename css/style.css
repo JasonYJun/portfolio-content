@@ -8,14 +8,28 @@ nav {
     width:100%
 }
 
-.skipdiv {
-    width: 100%;
-    background-color: red;
-    text-align: center;
-    height: 32px;
-    padding-top: 5px;
-    width: 100%;
-    margin: 0px auto;
+.skipdiv a{
+    background: white;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    /*Your code here - position relative to the parent */
+    position: absolute;
+    /*Your code here - place 500px left and 40px higher */;
+    left: -500px;
+    top: -40px;
+}
+
+.skipdiv a:focus {
+    background: white;
+    top: 0;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
 }
 
 .skip{
@@ -61,19 +75,6 @@ figcaption{
     color:white;
     text-align: center;
 }
-  
-/* .inlineimg {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 45%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border: solid 2px white;
-}
-.inclineimg:hover {
-    border: solid 2px lightcoral;
-} */
 
 .indeximg {
     width: 30%;
@@ -86,14 +87,6 @@ figcaption{
 .indeximg:hover {
     border: solid 2px lightcoral;
 }
-
-/* .photo{
-    width:60%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20%;
-    padding-right: 20%;
-} */
 
 .movieimg {
     width:60%;
@@ -173,11 +166,6 @@ i {
     border:none;
 }
 
-#photoContainer {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 #photoContainer:last-child {
     flex-grow: 2;
   }
@@ -185,27 +173,29 @@ i {
 #gameheader {
     grid-column: 1 / -1;
 }
-#gameskip {
-    grid-column: 1/-1;
-}
 #sidegamereview{
     text-align: left;
     margin: 10px 10px;
 }
 
 
-
+/* //////////////////////////////////////////////////////////////// */
 /* This is the mobile view */
 #galleryli {
         height: 20vh;
         flex-grow: 1;
     }
 
+#photoContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .flexphoto {
     height: auto;
     width: 100%;
     object-fit: cover;
-    vertical-align: bottom;
+    display:block;
     }
 
 nav > ul li{
@@ -214,7 +204,7 @@ nav > ul li{
 }
 
 header {
-    height: 15vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,34 +213,66 @@ header {
 
 .headnav {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 42pt;
+    font-size: 30pt;
     color: white;
     background-color: black;
 }
 
 .active {
-    font-size: 48pt;
+    font-size: 32pt;
     color:#F28888;
 }
 
 #gamecontainer{
     grid-template-rows: auto auto auto auto auto;
 }
-
+#gameheader {
+    grid-row: 1 / 2;
+}
 #gamemain{
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
 }
 #gameaside{
     grid-column: 1 / -1;
-    grid-row: 4 / 5;
+    grid-row: 2 / 3;
     background-color: #F28888;
 }
 #gamefooter{
-    grid-row: 5 /6;
+    grid-row: 3 /4;
 }
 
+#gameskip{
+    height: 0px;
+}
 
+@keyframes change_bg_color {
+    0%   {background-color:#373737; left:0px; top:0px;}
+    10%  {background-color:#333333; left:200px; top:0px;}
+    20%  {background-color:#282828; left:200px; top:200px;}
+    30%  {background-color:#1B1B1B; left:0px; top:200px;}
+    40% {background-color:#020202; left:0px; top:0px;}
+    50% {background-color:#000000; left:0px; top:0px;}
+    60% {background-color:#020202; left:0px; top:0px;}
+    70%  {background-color:#1B1B1B; left:0px; top:200px;}
+    80%  {background-color:#282828; left:200px; top:200px;}
+    90%  {background-color:#333333; left:200px; top:0px;}
+    100%   {background-color:#373737; left:0px; top:0px;}
+}
+
+#anim_bg {
+    animation-name: change_bg_color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#form_index {
+    display: block;
+}
+
+#form_lable{
+    width:100%;
+}
 
 /* This is the desktop view */
 @media (min-width: 1200px){
@@ -297,24 +319,89 @@ header {
         display: grid;
         width: 100%;
         height:100%;
-        grid-template-rows: 18mm 37px auto 30px;
+        grid-template-rows: 18mm auto 30px;
         grid-template-columns: 1fr 1fr 1fr ;
     }
     
+    #gameheader {
+        grid-row: 1 / 2;
+    }
+
     #gamemain{
         grid-column: 1 / 3;
-        grid-row: 3 / 4;
+        grid-row: 2 / 3;
     }
     #gamefooter{
         grid-column: 1 / 4;
     }
     #gameaside{
         grid-column: 3 / 4;
-        grid-row: 3 / 4;
+        grid-row: 2 / 3;
         min-height: 400px;
         background-color: #F28888;
     }
+
+    p{
+        width: 60%;
+        text-align: center;
+        margin:auto;
+    }
 }
+
+/* This is the tablet view */
+@media (min-width: 850px) and (max-width: 1199px) {
+    nav > ul li{
+        display: inline-block;
+    }
+    
+    header{
+        text-align: center;
+        background-color: black;
+        height: 18mm;
+        width: 100%;
+    }
+    
+    .headnav {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 16pt;
+        color: gray;
+        margin: 0px 10px 0px 10px;
+        background-color: black;
+    }
+
+    .active {
+        font-size: 22pt;
+        color:#F28888;
+    }
+
+    p {
+        width: 80%;
+        text-align: center;
+        margin:auto;
+    }
+    #tenetHeader, #cmiycHeader {
+        font-family: "Trirong", serif;
+        margin-bottom: 0px;
+        width:80%;
+        font-size: 32pt;
+        padding: 30px auto;
+        margin: auto;
+    }
+    #tenetContent, #cmiycContent {
+        width: 80%;
+        height: 250px;
+        padding: 50px 0px;
+        font-size: 24pt;
+    }
+}
+
+
+@media (prefers-reduced-motion) {
+    /* styles to apply if the user's settings are set to reduced motion */
+    #anim_bg {
+        animation-name: none;
+    }
+  }
 
 /* .photogrid {
     max-height: 990px;
